@@ -1,1 +1,3 @@
-https://github.com/frhnHanif/Tugas_todo-web
+Repository : https://github.com/frhnHanif/Tugas_todo-web
+
+Pages : https://frhnhanif.github.io/Tugas_todo-web/
