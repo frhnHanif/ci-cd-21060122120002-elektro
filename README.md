@@ -2,11 +2,11 @@
 
 # Deskripsi
 Proyek ini adalah aplikasi To-Do List sederhana yang dibangun menggunakan teknologi berikut:
-- React: Sebagai library utama untuk membangun antarmuka pengguna. React memungkinkan Anda untuk membuat komponen UI yang dapat digunakan kembali dan dikelola dengan state.
-- Vite: Sebagai build tool dan development server. Vite menyediakan lingkungan pengembangan yang cepat dengan hot module replacement (HMR) dan build yang efisien.
-- JavaScript (ES6+): Digunakan untuk menulis logika aplikasi. ES6+ menyediakan fitur modern seperti arrow functions, destructuring, dan template literals.
-- CSS (Tailwind CSS): Digunakan untuk styling komponen. Tailwind CSS adalah framework CSS utility-first yang memungkinkan Anda untuk menulis CSS langsung di dalam atribut className.
-- Local Storage: Digunakan untuk menyimpan data To-Do List di browser sehingga data tetap ada meskipun halaman di-refresh.
+- **React**: Library untuk membangun antarmuka pengguna.
+- **Vite**: Build tool dan development server.
+- **JavaScript (ES6+)**: Bahasa pemrograman yang digunakan.
+- **Tailwind CSS**: Framework CSS utility-first untuk styling.
+- **Local Storage**: Penyimpanan data di browser.
 
 # Struktur Proyek
 - index.html: File HTML utama yang memuat aplikasi React. Ini juga mengatur favicon dan title halaman.
