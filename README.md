@@ -22,7 +22,7 @@ Proyek ini adalah aplikasi To-Do List sederhana yang dibangun menggunakan teknol
 Penyimpanan Lokal: Daftar To-Do disimpan di local storage sehingga data tetap ada meskipun halaman di-refresh.
 
 # Screenshot
-![Login](public/screrenshot.png")
+![Screenshot](public/screenshot.png)
 
 
 # React + Vite
