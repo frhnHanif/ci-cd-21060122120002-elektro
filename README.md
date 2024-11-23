@@ -1,36 +1,25 @@
 ### Tugas Pengembangan Web_Farhan Hanif Rahmansyah_21060122120002
 
-# Deskripsi
-Proyek ini adalah aplikasi To-Do List sederhana yang dibangun menggunakan teknologi berikut:
-- **React**: Library untuk membangun antarmuka pengguna.
-- **Vite**: Build tool dan development server.
-- **JavaScript (ES6+)**: Bahasa pemrograman yang digunakan.
-- **Tailwind CSS**: Framework CSS utility-first untuk styling.
-- **Local Storage**: Penyimpanan data di browser.
+# Proses CI/CD dan Hasil Deployment
 
-# Struktur Proyek
-- index.html: File HTML utama yang memuat aplikasi React. Ini juga mengatur favicon dan title halaman.
-- App.jsx: Komponen utama aplikasi yang merender komponen ToDo.
-- ToDo.jsx: Komponen yang mengelola daftar To-Do. Ini mencakup logika untuk menambah, menghapus, dan menandai To-Do sebagai selesai.
-- ToDoItems.jsx: Komponen yang merender item individu dalam daftar To-Do.
-- assets: Direktori yang menyimpan aset seperti gambar ikon.
+### Continuous Integration (CI)
 
-# Fungsionalitas Utama
-- Menambah To-Do: Pengguna dapat menambahkan item baru ke daftar To-Do dengan mengetikkan teks dan mengklik tombol "Tambah".
-- Menandai Selesai: Pengguna dapat menandai item sebagai selesai dengan mengklik item tersebut. Item yang selesai akan diberi garis tengah.
-- Menghapus To-Do: Pengguna dapat menghapus item dari daftar dengan mengklik ikon hapus.
-Penyimpanan Lokal: Daftar To-Do disimpan di local storage sehingga data tetap ada meskipun halaman di-refresh.
+File konfigurasi CI (`ci.yml`) melakukan langkah-langkah berikut:
 
-# Screenshot
-![Login](public/screrenshot.png)
+1. **Trigger**: Proses CI dijalankan setiap kali ada push atau pull request ke branch `main`.
+2. **Checkout Code**: Mengambil kode dari repository.
+3. **Setup Node.js**: Mengatur lingkungan Node.js dengan versi yang ditentukan.
 
+### Continuous Deployment (CD)
 
-# React + Vite
+Proses Continuous Integration dan Continuous Deployment (CI/CD) pada proyek ini menggunakan GitHub Actions untuk otomatisasi build dan deployment ke GitHub Pages. Berikut adalah langkah-langkah yang dilakukan dalam proses CI/CD:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. **Checkout Code**: Mengambil kode dari repository.
+2. **Setup Node.js**: Mengatur lingkungan Node.js dengan versi yang ditentukan.
+3. **Install Dependencies**: Menginstal semua dependensi yang diperlukan menggunakan `npm install`.
+4. **Build Project**: Membangun proyek menggunakan `npm run build` untuk menghasilkan file statis yang siap untuk dideploy.
+5. **Deploy to GitHub Pages**: Menggunakan `peaceiris/actions-gh-pages@v3` untuk mendeploy file hasil build ke branch `gh-pages`.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# ci-cd-21060122120002-elektro
+### Hasil Deployment
+Hasil dari project ini telah di deploy ke GitHub Pages yang dapat diakses melalui link:
+https://frhnhanif.github.io/ci-cd-21060122120002-elektro/ 
