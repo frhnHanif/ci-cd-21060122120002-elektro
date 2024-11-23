@@ -24,8 +24,15 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Prepare deployment
+        run: |
+          mkdir -p out
+          echo "Hello from CI/CD Deployment" > out/index.html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.YOUR_SECRETKEY }}
-          publish_dir: ./dist
+          github_token: ${{ secrets.YOUR_SECRET_KEY}}
+          publish_dir: ./out
+          publish_branch: gh-pages
+          destination_dir: .
