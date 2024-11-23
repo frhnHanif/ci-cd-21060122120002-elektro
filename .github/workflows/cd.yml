@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -18,9 +21,14 @@ jobs:
         with:
           node-version: 16
 
-      - name: Deploy to GitHub Pages
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build
+
+      - name: Prepare deployment
         run: |
-          npm run build
           mkdir -p out
           echo "Hello from CI/CD Deployment" > out/index.html
 
